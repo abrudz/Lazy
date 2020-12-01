@@ -1,6 +1,6 @@
-﻿:Namespace Lazy ⍝ V 1.00
+﻿:Namespace Lazy ⍝ V 1.01
 ⍝ True lazy (late-binding) editable SALTable ⎕FIXable definition
-⍝ Allows defintion of arrays and tacit functions/operators
+⍝ Allows defintion of arrays and tacit functions
 ⍝ 2018 06 07 Adam: Initial definition
 
     ⎕IO←1 ⋄ ⎕ML←1
@@ -48,7 +48,7 @@
     ∇ r←level Help cmd;c
       c←'    ]',cmd,' '
       r←,⊂'Creates and reports lazily evaluated (late-binding) definitions.'
-      r,←⊂'This allows SALTing, ⎕FIXing, and commenting both arrays and tacit functions/operators.'
+      r,←⊂'This allows SALTing, ⎕FIXing, and commenting both arrays and tacit functions. Note that operators are not supported.'
       r,←⊂c,'         ⍝ list all lazy definitions'
       r,←⊂c,'fn       ⍝ show lazy definition'
       r,←⊂c,'fn←code  ⍝ define lazily'
