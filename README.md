@@ -1,7 +1,7 @@
 # Lazily evaluated (late-binding) definition for Dyalog APL
-*True lazy (late-binding) editable SALTable ⎕FIXable definition*
+*True lazy (late-binding) editable, SALTable, Linkable, `⎕FIX`able definition*
 
-This user command allows defintion of arrays and tacit functions in a lazy manner, which means that their definitions are not evaluated until runtime. This allows SALTing, ⎕FIXing, and commenting both arrays and tacit functions, and allows tacit top-down programming.
+This user command allows defintion of arrays and tacit functions in a lazy manner, which means that their definitions are not evaluated until runtime. This allows editing, SALTing, Linking, `⎕FIX`ing, and commenting both arrays and tacit functions, and allows tacit top-down programming.
 
 ## Installation
 
