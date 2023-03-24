@@ -1,4 +1,4 @@
-﻿:Namespace Lazy ⍝ V 1.01
+﻿:Namespace Lazy ⍝ V 1.02
 ⍝ True lazy (late-binding) editable, SALTable, ⎕FIXable, Linkable definition
 ⍝ Allows defintion of arrays and tacit functions
 ⍝ 2018 06 07 Adam: Initial definition
