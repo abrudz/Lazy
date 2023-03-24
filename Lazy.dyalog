@@ -1,7 +1,8 @@
 ﻿:Namespace Lazy ⍝ V 1.01
-⍝ True lazy (late-binding) editable SALTable ⎕FIXable definition
+⍝ True lazy (late-binding) editable, SALTable, ⎕FIXable, Linkable definition
 ⍝ Allows defintion of arrays and tacit functions
 ⍝ 2018 06 07 Adam: Initial definition
+⍝ 2023 03 24 Adam: Link integration
 
     ⎕IO←1 ⋄ ⎕ML←1
 
@@ -34,7 +35,7 @@
           :Case ¯1 ⍝ define
               nr←,⊂(⊃,'←',⊃)'[^←]+'⎕S'&'⊢input
               nr,←⊂{6::⍵ ⋄ (⍳∘' '↓⊢)##.##.msg}input
-              :If ∨/input⍷⍨T.⎕FX nr ⍝ success
+              :If ∨/input⍷⍨T{0::⍺.⎕FX ⍵ ⋄ ⍺ ⎕SE.Link.Fix ⍵}nr ⍝ success
                   r←⍬⊤⍬
               :Else ⍝ failure
                   r←'* Invalid definition!'
